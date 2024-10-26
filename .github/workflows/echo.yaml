@@ -14,11 +14,11 @@ jobs:
   echo-job:
     name: Terraform deploy from ${{ github.ref }}
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/echo'
+    if: github.ref == 'refs/heads/wordpress'
 
     defaults:
       run:
-        working-directory: terraform/echo
+        working-directory: terraform/wordpress
 
     steps:
     - name: Checkout Repo
